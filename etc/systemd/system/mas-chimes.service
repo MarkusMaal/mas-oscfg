@@ -1,0 +1,10 @@
+[Unit]
+Description=Play sound at startup and shutdown
+
+[Service]
+Type=simple
+RemainAfterExit=true
+ExecStart=/bin/bash -c "sleep 8 && aplay --device=hdmi:CARD=HDMI,DEV=0 /home/markus/.mas/startup_linux.wav"
+ExecStop=/bin/bash -c "sleep 1 && aplay --device=hdmi:CARD=HDMI,DEV=0 /home/markus/.mas/shutdown_linux.wav"
+[Install]
+WantedBy=multi-user.target
