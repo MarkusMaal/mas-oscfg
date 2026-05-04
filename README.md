@@ -4,7 +4,7 @@
 
 * Keel: Linuxi konfiguratsioonifailid
 * Valmimise aasta: 2026
-* Viimane uuendus: 24. jaanuar 2026
+* Viimane uuendus: 4. mai 2026
 
 ## Paigaldamise juhised
 
@@ -24,6 +24,6 @@ Paigalda arvutisse [Omarchy Linux](https://omarchy.org/). Kõigepealt klooni see
   * Käivita `systemctl daemon-reload` superkasutajana
   * Lülita teenus sisse: `systemctl enable mas-chimes`
 * **Plymouth**
-  * Kirjuta üle olemasolev `omarchy` teema: `sudo cp usr/share/plymouth/themes/omarchy/* /usr/share/plymouth/themes/omarchy`
-  * Taasinstalli kernel: `sudo pacman -Syu linux`
+  * Paigalda `mas` teema: `sudo cp usr/share/plymouth/themes/mas /usr/share/plymouth/themes`
+  * Rakenda teema: `sudo plymouth-set-default-theme -R mas`
   * Taaskäivita arvuti: `reboot`

@@ -1,0 +1,11 @@
+[Plymouth Theme]
+Name=Markuse arvuti asjad
+Description=Markuse arvuti käivitusekraan
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/mas
+ScriptFile=/usr/share/plymouth/themes/mas/mas.script
+ConsoleLogBackgroundColor=0x1a1b26
+MonospaceFont=Cantarell 11
+Font=Cantarell 11
